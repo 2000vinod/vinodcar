@@ -1,0 +1,6 @@
+.container .car_img {
+    height: 7.5rem;
+    width: 27rem;
+    right: -14rem;
+    position:absolute;
+}

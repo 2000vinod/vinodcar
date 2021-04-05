@@ -1,0 +1,30 @@
+.container .car_img {
+    /* border: .1rem solid rgb(151, 11, 11); */
+    height: 10rem;
+    width: 39rem;
+    position: absolute;
+    top: 19.2rem;
+    right: -19rem;
+    /* display: none; */
+    animation: shakecar linear 1s infinite;
+}
+
+.wheel_left img {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 23rem;
+    right: 8.2rem;
+    /* display: none; */
+    animation: wheel_rotate linear .2s infinite;
+}
+
+.wheel_right img {
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 23rem;
+    right: -11.5rem;
+    /* display: none; */
+    animation: wheel_rotate linear .2s infinite;
+}

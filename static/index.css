@@ -1,0 +1,145 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* border:.1rem solid black; */
+}
+body{
+   
+    overflow:hidden;
+}  
+.container .sky img {
+    position:relative;
+    width:90rem;
+    height:41rem;
+    animation:shakesky linear 1.4s infinite;
+
+}
+
+.container .track {
+    /* border:.1rem solid rgb(243, 238, 238); */
+    height: 17rem;
+    width: 100rem;
+    top: 24rem;
+    /* display:none; */
+   
+}
+
+.container .track img{
+    /* border:.1rem solid rgb(243, 238, 238); */
+    height: 17rem;
+    width: 100rem;
+    position: absolute;
+    top: 24rem;
+    animation:trackrun linear .3s infinite;
+    /* display:none; */
+}
+.container .trees {
+    /* border:.1rem solid rgb(3, 87, 17); */
+    height: 25rem;
+    width: 100rem;
+    top: 1rem;
+    /* display:none; */
+}
+.container .trees img{
+    /* border:.1rem solid rgb(3, 87, 17); */
+    height: 25rem;
+    width: 100rem;
+    position: absolute;
+    top: 1rem;
+    /* display:none; */
+   
+     animation:shaketree linear 1.4s infinite;
+}
+
+.container .car_img{
+    /* border:.1rem solid rgb(151, 11, 11); */
+    height: 10rem;
+    width: 39rem;
+    position: absolute;
+    top: 19.2rem;
+    right: 19rem;
+    /* display:none; */
+    animation:shakecar linear 1s infinite;
+}
+.wheel_left img{
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 23rem;
+    right: 46.2rem;
+    /* display:none; */
+    animation: wheel_rotate linear .2s infinite;
+   
+}
+.wheel_right img{
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 23rem;
+    right: 26.5rem;
+    /* display:none; */
+    animation:wheel_rotate linear .2s infinite;
+}
+
+
+
+@keyframes wheel_rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes trackrun{
+    100%{
+        transform: translateX(-10rem);
+    }
+}
+
+
+
+
+@keyframes shakecar{
+    0%{
+        transform: translateY(-.2rem);
+    }
+    50%{
+        transform: translateY(.2rem);
+    }
+    100%{
+        transform: translateY(-.2rem);
+    }
+}
+
+
+@keyframes shaketree{
+    0%{
+        transform: translate(-.2rem,-.2rem);
+       
+    }
+    50%{
+        transform: translate(.2rem,.2rem);
+       
+    }
+    100%{
+        transform: translate(-.2rem,-.2rem);
+      
+    }
+}
+
+@keyframes shakesky{
+    0%{
+        transform: translate(.1rem,-.1rem);
+       
+    }
+    50%{
+        transform: translate(-.1rem,.1rem);
+       
+    }
+    100%{
+        transform: translate(.1rem,-.1rem);
+      
+    }
+}
